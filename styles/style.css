@@ -15,11 +15,13 @@ main{
 }
 .section-tittle{
     color: #562EFF;
-    margin-top: 3px;
+    margin-top: 33px;
+    font-size: 18px;
+    margin-bottom: 50px;
 }
 .container{
     width: 870px;
-    height: 679px;
+    height: 779px;
     padding: 30px;
     
     
@@ -32,6 +34,7 @@ main{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
     
 }
 .player{
@@ -40,8 +43,35 @@ main{
 }
 .player-name{
     margin-left: 20px;
+    font-size: 18px;
+    color: aqua;
 }
 .player img{
     height: 56px;
     width: 56px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 20px;
+}
+
+/* <----------------------blogs style here-------------------->*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    display: flex;
+}
+.blog-thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    font-size: 16px;
+    margin-left: 20px;
+}
+.blog-info a{
+    color: #562EFF;
+    text-decoration: none;
 }
