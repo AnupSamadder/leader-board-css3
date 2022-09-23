@@ -11,7 +11,8 @@ body{
 } 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .section-tittle{
     color: #562EFF;
@@ -23,6 +24,8 @@ main{
     width: 870px;
     height: 779px;
     padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     
     
     background-color: #FFFFFF;
@@ -74,4 +77,59 @@ hr{
 .blog-info a{
     color: #562EFF;
     text-decoration: none;
+}
+
+
+/* <-------------- course banner styles are here----------------->  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.course-banner img{
+    width: 224px;
+    height: 106px;
+}
+.course-name{
+    font-size: 18px;
+    color: #472ce3;
+}
+.author-name{
+    font-size: 12px;
+    color: red;
+}
+.fa-star{
+    color: #FFC014;
+    font-size: 10px;
+
+}
+.fa-regular{
+    color: #AEAEAE;
+}
+.course-ratings{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+p{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* <------------------------------ Media Qureys Syles Are Here --------------------------> */
+
+/* <-------------Mobile Devices---------> */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+    .player{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
